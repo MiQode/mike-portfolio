@@ -15,11 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  refactory,
+  stanbic,
+  priceIndex,
   carrent,
+  mukozi,
   jobit,
   tripguide,
   threejs,
@@ -117,24 +117,12 @@ const technologies = [
 const experiences = [
   {
     title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    company_name: 'Stanbic Bank Incubator',
+    icon: stanbic,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'April 2020 - June 2020',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
+      'Converting offline operations of the organisation into an online platform',
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
@@ -143,10 +131,10 @@ const experiences = [
   },
   {
     title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    company_name: 'Price Index Boats',
+    icon: priceIndex,
+    iconBg: '#E6DEDD',
+    date: 'Jan 2022 - Present',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -156,10 +144,10 @@ const experiences = [
   },
   {
     title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    company_name: 'Refactory',
+    icon: refactory,
+    iconBg: '#383E56',
+    date: 'Jan 2020 - Jun 2020',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -171,36 +159,79 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
+    testimonial: `Choosing Mike to handle the frontend development was a brilliant decision. 
+                  The user interface they designed is intuitive and inviting, creating an enjoyable browsing experience for our clients.`,
+    name: 'Baker D.',
+    designation: 'CEO',
+    company: 'ABU East Africa',
     image: 'https://randomuser.me/api/portraits/women/4.jpg',
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
+    testimonial: `I needed a web frontend developer who could showcase our vessels in the best light possible. Mike's ability to balance 
+                  aesthetics with functionality resulted in a seamless browsing experience that truly stands out.`,
+    name: 'Timothy B.',
+    designation: 'CEO',
+    company: 'Price Index',
     image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
+    testimonial: `Mike not only understood the intricacies of our business model but also designed an interface that catered to both employers 
+                  and job seekers seamlessly. His commitment to creating a platform that resonates with our target audience has been invaluable.`,
+    name: 'Martha R.',
     designation: 'CTO',
-    company: '456 Enterprises',
+    company: 'Mukozi Co.',
     image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'ABU East Africa',
+    description: `Website platform that professionally showcases the company and what it offers to the public. 
+      Ot allows users to search, book, and choose travel requirements from various destinations, 
+      providing a convenient and efficient solution for vacation and business needs.`,
+    tags: [
+      {
+        name: 'html5',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'css3',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: carrent,
+    source_code_link: 'http://abueastafrica.com/',
+  },
+  {
+    name: 'Price Index Boats',
+    description: `Web application that enables users to search for luxury boats for sale and for hire, 
+      view specifications to suitably customise the client's needs for luxury rides, family parties and water lifestyle.`,
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: jobit,
+    source_code_link: 'https://github.com/',
+  },
+  {
+    name: 'Mukozi',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
         name: 'react',
@@ -211,53 +242,11 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'nodejs',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: tripguide,
+    image: mukozi,
     source_code_link: 'https://github.com/',
   },
 ];
