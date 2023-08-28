@@ -31,16 +31,10 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // qNWLBYpOFpocI8ObJ
-    //template_cb5lc5v
-    //service_xqaiy0r
-
     emailjs
       .send(
-        'service_xqaiy0r',
-        'template_cb5lc5v',
-        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: 'Mike',
@@ -48,8 +42,7 @@ const Contact = () => {
           to_email: 'rembomike@gmail.com',
           message: form.message,
         },
-        'qNWLBYpOFpocI8ObJ'
-        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
