@@ -21,8 +21,8 @@ import {
   carrent,
   mukozi,
   jobit,
-  tripguide,
   threejs,
+  baker,
 } from '../assets';
 
 export const navLinks = [
@@ -46,7 +46,7 @@ const services = [
     icon: web,
   },
   {
-    title: 'React Native Developer',
+    title: 'React Developer',
     icon: mobile,
   },
   {
@@ -116,6 +116,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Web Developer',
+    company_name: 'Price Index Boats',
+    icon: priceIndex,
+    iconBg: '#E6DEDD',
+    date: 'Jan 2022 - Present',
+    points: [
+      'Designing and building reusable React components that encapsulate specific functionalities.',
+      'Collaborating using version control systems like Git to manage code changes, merge requests, and maintain a clean and organized codebase.',
+      'Ensuring the user interface works seamlessly across various devices and screen sizes by implementing responsive design principles.',
+      'Keeping up with the latest trends, updates, and best practices in the React ecosystem and web development in general.',
+    ],
+  },
+  {
     title: 'React.js Developer',
     company_name: 'Stanbic Bank Incubator',
     icon: stanbic,
@@ -123,23 +136,10 @@ const experiences = [
     date: 'April 2020 - June 2020',
     points: [
       'Converting offline operations of the organisation into an online platform',
-      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Setting up deployment pipelines using tools like Jenkins, Travis CI, or GitHub Actions to automate the process of building, testing, and deploying the application.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Price Index Boats',
-    icon: priceIndex,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2022 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Participating in code reviews to provide and receive constructive feedback, ensuring code quality, adherence to best practices, and consistency.',
     ],
   },
   {
@@ -149,10 +149,10 @@ const experiences = [
     iconBg: '#383E56',
     date: 'Jan 2020 - Jun 2020',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Writing clean, efficient, and maintainable code to create interactive and responsive user interfaces using React and related technologies.',
+      'Identifying and addressing performance bottlenecks by optimizing component rendering and minimizing re-renders.',
+      'Collaborating with UI/UX designers to translate design mockups and wireframes into functional React components while maintaining the intended user experience.',
+      'Debugging issues and errors in the application using browser developer tools and writing unit and integration tests using libraries like Jest, Enzyme, or React Testing Library.',
     ],
   },
 ];
@@ -164,7 +164,7 @@ const testimonials = [
     name: 'Baker D.',
     designation: 'CEO',
     company: 'ABU East Africa',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    image: 'https://randomuser.me/api/portraits/men/4.jpg',
   },
   {
     testimonial: `I needed a web frontend developer who could showcase our vessels in the best light possible. Mike's ability to balance 
